@@ -1,5 +1,4 @@
 # Curso Front-end
-#### EBAC
 
 # GIT
 ## Conceitos de versionamento
@@ -29,7 +28,20 @@
  ## Commits
  Informação de alteração
  - após testado todo seu código
- git add * git commit -m "mensagem" git push (enviar alterações para o repositório GitHub) git pull (puxar / trazer alterações do GitHub para sua máquina)
+ - git add * 
+ - git commit -m "mensagem" 
+ - git push (enviar alterações para o repositório GitHub)
+ - git pull (puxar / trazer alterações do GitHub para sua máquina)
 
 ## GitFlow
 Fluxo do Git
+
+### Branchs
+são ramificações / versões paralelas
+
+ - main / master
+ - develop
+ - DOD Definition of Done: critérios de aceite
+ - versionamento 0.1.10
+
+
