@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=devide-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat mattis sollicitudin. Quisque feugiat ante vitae hendrerit faucibus. Sed placerat risus magna. Etiam et mollis massa, sed eleifend purus. Vestibulum efficitur leo sed turpis porta bibendum. Donec venenatis interdum erat, id sagittis nisi. Nullam porta ante non felis volutpat sollicitudin. Curabitur quis purus lorem. Aliquam vel nulla vitae ligula faucibus posuere. Nulla ac eros dui. Integer feugiat semper eros, quis vulputate neque suscipit non. Suspendisse varius luctus finibus. Proin pretium placerat purus vel cursus. Donec odio nibh, venenatis vitae nisl fermentum, facilisis imperdiet ligula. Nulla metus neque, finibus eget fringilla sit amet, feugiat at ipsum. In id urna ac odio rutrum tempor.</p>
+
+				<p>Suspendisse potenti. Donec ornare viverra nisi efficitur fermentum. Nunc vehicula elit sodales nisi feugiat blandit. Quisque scelerisque fermentum mollis. Donec vulputate mi diam, non euismod dui laoreet non. Donec vehicula auctor nisi, sit amet egestas quam venenatis ac. Proin eleifend sapien eget varius aliquet. Sed faucibus placerat pharetra. Maecenas id consectetur magna. Ut placerat dignissim consequat. Ut odio enim, commodo ac felis efficitur, convallis convallis felis. Suspendisse fringilla orci est, venenatis tempor lorem laoreet vel. Pellentesque gravida lobortis lorem vitae ultricies. Nam convallis hendrerit quam. Phasellus consectetur feugiat arcu non auctor.</p>
+
+
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Alexandre</p>
+		</footer>
+		
+	</body>
+</html>
