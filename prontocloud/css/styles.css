@@ -10,7 +10,7 @@ body {
 
 .main-container {
     display: block;
-    width: 100vw;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -106,7 +106,7 @@ section {
 section nav {
     display: block;
     float: left;
-    width: 30%;
+    width: 20%;
 }
 
 nav li {
@@ -157,11 +157,12 @@ footer small {
     overflow: hidden !important;
 }
 
+
 @media (max-width: 425px) {
     section nav,
     section article {
         width: 100%;
-    }  
+    }
 
     .container {
         padding-left: 1%;
